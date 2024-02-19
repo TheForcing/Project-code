@@ -1,0 +1,94 @@
+.button {
+  background-color: #ff5656;
+  color: #ffffff;
+  border: 1px;
+  border-radius: 0.3rem;
+  width: 80%;
+  height: 5vh;
+  font: normal 600 1.2rem/22px "Noto Sans KR";
+}
+.button2 {
+  background: #ff5656;
+  border: 1px solid #ff5656;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  width: 30%;
+  border-radius: 10px;
+  border: none;
+  align-self: stretch;
+  height: 2.8rem;
+  margin-top: 1rem;
+  font: normal 400 1.2rem "NanumSquare";
+}
+.join {
+  background: #ff5656;
+  border: 1px solid #ff5656;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  width: 30%;
+  border-radius: 10px;
+  border: none;
+  align-self: center;
+  height: 2.8rem;
+  position: relative;
+  left: 1.2rem;
+  bottom: 0.3rem;
+  font: normal 400 1.2rem "NanumSquare";
+}
+.button1 {
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  color: #888;
+  text-decoration: none;
+  width: 30%;
+  border-radius: 10px;
+  align-self: stretch;
+  height: 2.8rem;
+  font: normal 400 1.2rem "NanumSquare";
+  margin-top: 1rem;
+}
+
+.listButton {
+  display: inline-block;
+  border: 0;
+}
+
+.radioFont {
+  font-size: 16px;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+  border: 1px;
+  border-color: lightgray;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 175px;
+}
+.nav {
+  text-align: center;
+  margin: 0 10px;
+  color: "#999";
+}
+.nav:current {
+  text-decoration: underline;
+}
+
+.modalBtn {
+  color: white;
+  font: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  height: 2rem;
+  padding: 0.2rem;
+  background-color: #ff5656;
+  box-shadow: 1px 1px 3px 1px #dadce0;
+  border-radius: 10px;
+  border: solid transparent;
+}

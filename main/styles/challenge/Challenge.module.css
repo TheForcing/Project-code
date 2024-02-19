@@ -1,0 +1,248 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  justify-items: center;
+  align-items: center;
+  margin-top: 8vh;
+}
+.modalContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+.indexCont {
+  display: flex;
+}
+.span {
+  display: flex;
+  flex-direction: column;
+  font: normal 600 1.3rem/24px "Noto Sans KR";
+  position: relative;
+  top: "40%";
+  color: black;
+}
+
+.item {
+  width: 250px;
+  margin: 10px;
+  justify-self: center;
+  align-self: center;
+}
+.html {
+  background-color: #fff4f4;
+}
+
+.list {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  top: 3vh;
+}
+
+.item2 {
+  display: grid;
+  width: 2px;
+  z-index: -1;
+  position: fixed;
+  bottom: 100px;
+  left: 165px;
+}
+.container2 {
+  margin-top: 7vh;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.hr {
+  height: 10px;
+  border: 0;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+.hr2 {
+  position: relative;
+  margin: 10px 0;
+  height: 0.1px;
+  border: 0;
+  background-color: lightgray;
+}
+.hr3 {
+  margin: 20px;
+  height: 0.1px;
+  border: 0;
+  background-color: lightgray;
+}
+.h2 {
+  margin: 2rem 0;
+  font: normal 600 1.5rem/24px "Noto Sans KR";
+}
+.h2C {
+  text-align: center;
+  margin: 20px, 0;
+  position: relative;
+  bottom: 10px;
+  font: normal 500 1.3rem/22px "Noto Sans KR";
+}
+.h2L {
+  margin: 0;
+  position: relative;
+  text-align: center;
+  font: normal 600 1.4rem/36px "Noto Sans KR";
+}
+
+.h3 {
+  text-align: center;
+  margin-bottom: 5px;
+  font: normal 600 1.5rem/36px "Noto Sans KR";
+}
+.h3Mt {
+  margin-top: 10px;
+}
+.h4 {
+  text-align: center;
+  margin: 0px;
+  height: 20px;
+  font: normal 500 1.3rem/24px "Noto Sans KR";
+}
+.h4T {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  height: 1rem;
+  font: normal 500 1.3rem/24px "Noto Sans KR";
+}
+.h4Mt {
+  text-align: center;
+
+  margin-top: 10px;
+  font: normal 500 1.3rem/24px "Noto Sans KR";
+  height: 20px;
+}
+.h4Mb {
+  text-align: right;
+  position: relative;
+  margin-right: 10px;
+  font: normal 600 1.2rem/24px "Noto Sans KR";
+}
+.h4Mr {
+  text-align: right;
+  position: relative;
+  margin-right: 10px;
+  bottom: 10px;
+  font: normal 600 1.2rem/24px "Noto Sans KR";
+}
+.causion {
+  font: normal 600 1.2rem/24px "Noto Sans KR";
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  align-items: center;
+}
+.form {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100vw;
+  text-align: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  justify-content: left;
+  align-content: center;
+  height: 1rem;
+}
+.li {
+  font: normal normal normal 1.1rem/22px "Noto Sans KR";
+}
+.footer {
+  margin: "0 10px";
+  position: fixed;
+  left: 0.5rem;
+  bottom: 6vh;
+  width: 95vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-around;
+  border: 1px bold lightgray;
+}
+.header2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainTag {
+  position: absolute;
+  left: 1rem;
+  top: 8%;
+  font: normal 600 1.4rem/36px "Noto Sans KR";
+}
+.bottomTag {
+  position: relative;
+  left: 1rem;
+  top: 75%;
+  font: normal 600 1.4rem/36px "Noto Sans KR";
+}
+.scrollTag {
+  position: relative;
+  left: 1rem;
+  top: 75%;
+  font: normal 600 1.4rem/36px "Noto Sans KR";
+}
+.newTitle {
+  text-align: center;
+  position: relative;
+  top: 3vh;
+  margin-bottom: 1rem;
+  font: normal 600 1.4rem/24px "Noto Sans KR";
+}
+.title {
+  font: normal 600 1.4rem/24px "Noto Sans KR";
+}
+.content {
+  font: normal 600 1.2rem/24px Noto Sans KR;
+}
+.mainTitle {
+  position: relative;
+  top: 10vh;
+  font: normal 600 1.6rem/36px "Noto Sans KR";
+}

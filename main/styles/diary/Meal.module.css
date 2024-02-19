@@ -1,0 +1,390 @@
+/* Meal */
+.mealItem {
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 1px 1px 3px 1px #dadce0;
+}
+  
+.mealTypeLabel {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font: normal 500 1.2rem/22px "Noto Sans KR";
+    border-radius: 15px;
+    padding: 0 0.5rem;
+    /* box-shadow: 1px 1px 3px 1px #dadce0; */
+    background-color: #fff;
+}
+  
+.mealItem .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+  
+.mealItem img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+/* LookupMeal*/
+.lookupMealWrap {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.lookupMealHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.lookupMealHeader > span {
+    font: normal 600 1.3rem 'Noto Sans KR';
+}
+
+.lookupMealImg {
+    width: 100%;
+    height: 40vh;
+    box-shadow: 1px 1px 3px 1px #dadce0;
+    border-radius: 20px;
+}
+
+.lookupMealImg > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.lookupMealList {
+    margin: 1rem 0 0.5rem 0;
+    display: flex;
+    text-align: center;
+    box-shadow: 1px 1px 3px 1px #dadce0;
+    border-radius: 20px;
+    padding: 1rem 0;
+    font: normal 400 1rem/1.3rem "NanumSquare";
+}
+
+.lookupMealList > div {
+    width: 25%;
+    border-right: solid 1px lightgray;
+}
+
+.lookupMealList > div :last-child {
+    border-right: none;
+}
+
+.lookupMealWrap button {
+    width: 100%;
+    border-radius: 10px;
+    font: normal 400 1.2rem/22px 'Noto Sans KR';
+
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: #e0e1e2 none;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem 0.8rem;
+    text-transform: none;
+    text-shadow: none;
+}
+
+/* AddFood */
+.multiBtn {
+    display: flex;
+    justify-content: left;
+}
+
+.multiBtn P {
+    font: normal 400 1.3rem 'Noto Sans KR';
+}
+
+.AddFoodWrap {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.AddFoodHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    position: relative;
+    align-items: center;
+}
+
+.AddFoodHeader > span {
+  font: normal 600 1.3rem 'Noto Sans KR';
+}
+
+.AddFoodHeader > a {
+    background-color: #ff5656;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    font: normal 400 0.8rem/1.2rem 'Noto Sans KR';
+}
+
+/* Product */
+.ProductWrap {
+    padding-top: 1rem;
+}
+
+.ProductWrap > div {
+    text-align: left; 
+    margin: 0;
+    color: #ff5656;
+}
+
+.ProductWrap .ListTitle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.ProductWrap .ListTitle span {
+    font: normal 600 1rem "NanumSquare";
+    margin: 0.25rem 0 0 0.25rem;
+}
+
+.ProductItem {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0.5rem 0;
+    border-bottom: solid 1px #9f9f9f;
+}
+
+.ProductItem .header {
+    font: normal 500 1.2rem "NanumSquare";
+}
+
+.ProductItem .description {
+    font: normal 400 1rem "NanumSquare";
+    color: #888;
+}
+
+.ProductItem .calorie {
+    font: normal 400 1.2rem "NanumSquare";
+    color: #888;
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.ProductItem input {
+    width: 5rem;
+}
+
+.ProductItem span {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.ProductItem .biX {
+    font-size: 1.8rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 1rem;
+}
+
+/* FoodModal & RecipeModal */
+.modalItem {
+    padding: 0.5rem 0;
+    border-bottom: solid 1px #ccc;
+}
+
+.modalItem > div {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 9.75fr 0.25fr;
+    color: #333;
+}
+
+.modalWindow {
+    border-radius: 20px !important;
+}
+
+.modalItem > div svg {
+    margin: 0.5rem 0 0 1rem;
+}
+
+.modalItem .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalItem .header {
+    font: normal 500 1.2rem "NanumSquare";
+}
+
+.modalItem .description {
+    font: normal 400 1rem "NanumSquare";
+    color: #888;
+}
+
+.modalItem .calorie {
+    font: normal 400 1.2rem "NanumSquare";
+    color: #888;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+/* Modal */
+.modalHeader {
+    font: normal 700 1.5rem 'NanumSquare';
+    background-color: #e3e3e3;
+    padding: 0.75rem 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.modalContent {
+    text-align: center;
+    width: 100%;
+}
+
+.modalContent p {
+    font: normal 400 1rem 'Noto Sans KR';
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent > div > button {
+    border-radius: 20px;
+    margin-left: 1rem;
+    border: none;
+    /* box-shadow: 1px 1px 3px 1px #dadce0; */
+    font: normal 500 1rem 'Noto Sans KR';
+    padding: 0 1rem;
+    background-color: #ff5656;
+    color: #fff;
+}
+
+.modalContent > table {
+    width: 90%;
+    margin: 1rem auto !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    font: normal 700 1rem "NanumSquare";
+}
+
+.modalContent > table tr {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 1rem 0;
+    border-bottom: solid 1px #e3e3e3;
+}
+
+.modalContent > table td:first-child {
+    text-align: left;
+}
+
+.modalContent > table td:last-child {
+    text-align: right;
+}
+
+.modalAction {
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modalAction button {
+    border-radius: 10px;
+    border: none;
+    align-self: stretch;
+    height: 2.8rem;
+    font: normal 400 1.2rem 'Noto Sans KR';
+    width: 30%;
+}
+
+.modalAction button:first-child {
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #888;
+    text-decoration: none;
+}
+
+.modalAction button:last-child {
+    background: #ff5656;
+    border: 1px solid #ff5656;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Cart */
+.CartWrap {
+
+}
+
+.CartList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CartList span {
+    font : normal 600 1.2rem 'Noto Sans KR';
+}
+
+.CartWrap button {
+    width: 100%;
+    border-radius: 10px;
+    font: normal 500 1rem/22px 'Noto Sans KR';
+
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: #e0e1e2 none;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem 0.8rem;
+    text-transform: none;
+    text-shadow: none;
+}
+
+.CartSum {
+    margin-top: 1rem;
+    text-align: center;
+    font : normal 400 1.2rem "NanumSquare";
+    
+}
+
+.CartSum > span {
+    font-weight: 600;
+}

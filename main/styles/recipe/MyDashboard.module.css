@@ -1,0 +1,47 @@
+.container {
+  font-family: "NanumSquare";
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.innerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  border-radius: 15px;
+  border: 1px #ff5656 solid;
+  padding: 0.2rem 0.2rem;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #333333;
+  width: 80%;
+  max-width: 20vh;
+  height: 100%;
+  margin: 0;
+}
+
+.number {
+  font-size: 1.4rem;
+  color: #ff5656;
+}
+
+.number a {
+  color: #ff5656;
+}

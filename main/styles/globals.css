@@ -1,0 +1,275 @@
+/* google font: 'Noto Sans KR', 'Montserrat' */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+/* naver font: 'NanumSquare' (300, 400, 700, 800) */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css?family=NanumSquare");
+
+/*
+콘텐츠간 간격, 여백
+margin, padding, gap: 1rem;
+*/
+/*
+color:
+#ff5656 //메인
+#ccc //라이트그레이
+#333 //블랙
+#fff //화이트
+*/
+/*
+font size -> rem
+16px = 1rem
+24px = 1.5rem
+25px = 1.6rem
+28px = 1.8rem
+32px = 2rem
+*/
+/*
+기본 버튼
+button {
+  border-radius: 10px;
+  border: none;
+  align-self: stretch;
+  height: 2.8rem;
+  font: normal 400 1.2rem "NanumSquare";
+  width: 자유롭게%;
+}
+
+버튼 2개 나란히 있는 경우
+div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+div button {
+  width: 30%;
+}
+
+취소, 이전, 싫음 버튼: 왼쪽
+div button:first-child {
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  color: #888;
+  text-decoration: none;
+}
+
+확인, 다음, 좋음 버튼: 오른쪽
+div button:last-child {
+  background: #ff5656;
+  border: 1px solid #ff5656;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+*/
+/*
+기본 인풋
+input {
+  border-radius: 10px;
+  border: solid 1px #ccc;
+  align-self: stretch;
+  height: 2.8rem;
+  font: 400 1.2rem "NanumSquare";
+  text-align: left;
+  padding: 0.7rem 1rem;
+  background: #fff;
+  width: 자유롭게%;
+}
+*/
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  overflow-y: scroll; /*레이아웃 이동현상 방지 스크롤바 표시*/
+}
+
+body::-webkit-scrollbar {
+  width: 6px; /*스크롤바의 너비*/
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b2b2b2; /*스크롤바의 색상*/
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #d8d8d8; /*스크롤바 트랙 색상*/
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.ui.dimmer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Tab Menu */
+.wrap-default {
+  padding: 0 1rem;
+}
+
+.is-boxed {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.6rem;
+}
+
+.tabs a {
+  font: normal 600 1.2rem "Noto Sans KR";
+  color: #888;
+  margin: 0 0.5rem;
+}
+
+.tabs a:hover {
+  color: unset !important;
+}
+
+a.is-active {
+  color: #333;
+  border-bottom: solid 3px #333;
+}
+
+/* Datepicker Custom */
+.react-datepicker__input-container {
+  width: 1.5rem !important;
+  margin-right: 0.5rem;
+}
+
+.react-datepicker__input-container input {
+  border: none;
+}
+
+.customInput .icon {
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+.react-datepicker {
+  transform: scale(1);
+  padding: 1rem;
+  font-size: 1rem !important;
+  border: none !important;
+  border-radius: 20px !important;
+}
+
+.react-datepicker__portal {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.react-datepicker__triangle {
+  display: none;
+}
+
+.react-datepicker__header {
+  background-color: #fff !important;
+  border-bottom: none !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  border-radius: 50% !important;
+  background-color: #ff5656 !important;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__month-text:hover,
+.react-datepicker__quarter-text:hover,
+.react-datepicker__year-text:hover {
+  border-radius: 50% !important;
+  background-color: #f0f0f0 !important;
+}
+
+::selection {
+  /* background-color: #cce2ff; */
+  background-color: #ff5656 !important;
+}
+
+/* Description + Image */
+.is-desc {
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1.75fr 1.25fr;
+  grid-template-rows: 120px;
+}
+
+.is-desc p {
+  font: normal 600 1.2rem/1.5rem "NanumSquare";
+  margin: 0;
+}
+
+.is-desc button {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  border-radius: 20px;
+  border: none;
+  padding: 0.25rem 0 0.25rem 0.5rem;
+  box-shadow: 1px 1px 3px 1px #dadce0;
+  font: normal 600 0.8rem "NanumSquare";
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.is-desc button i {
+  width: 1rem;
+  height: 1rem;
+}
+
+.is-desc-food-img {
+  height: 82%;
+  background: url(../public/burger.png) no-repeat -100% 54% / 106%;
+}
+
+.is-desc-review-img {
+  height: 82%;
+  background: url(../public/pencil.png) no-repeat right 54% / 80%;
+}
+
+.shadow-img {
+  width: 60%;
+  height: 18%;
+  float: right;
+  margin-right: 1rem;
+  background: url(../public/shadow.png) no-repeat center 54% / 100%;
+}
+
+/* Meal */
+.meal-container {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-auto-rows: 160px;
+  grid-gap: 1rem;
+}

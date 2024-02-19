@@ -1,0 +1,30 @@
+.progress {
+  -webkit-appearance: none;
+  width: 9em;
+  height: 1em;
+  position: relative;
+  right: 0.7rem;
+}
+.progress::-webkit-progress-bar {
+  background: #e4685d;
+  justify-content: flex-start;
+  border-radius: 50px;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+.progress::-webkit-progress-value {
+  animation-duration: 2s;
+  animation-name: forward;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 50px;
+  background: #fff;
+}
+@keyframes forward {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
